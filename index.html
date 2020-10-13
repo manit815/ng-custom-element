@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
   <meta charset="utf-8">
-  <title>NgButton</title>
+  <title>Angular web component</title>
   <base href="/">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <script src="./element.js"></script>
@@ -16,5 +16,13 @@
 <body>
   <custom-button name="ING"></custom-button>
   <h3>HCL</h3>
+
+  <script>
+      const button = document.querySelector('custom-button');
+      button.addEventListener('action', (event) => {
+        console.log(`"action" emitted: ${event.detail}`);
+      });
+  
+  </script>
 </body>
 </html>
