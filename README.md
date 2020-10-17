@@ -9,14 +9,14 @@ To understand how Angular gives a way to create custom elements, refer to this [
 Try using angular-cli version >=6. For this project we are using 10.1.6.
 
 ## Install angular-cli and create a new project
-npm i  -g @angular/cli
+`npm i  -g @angular/cli`
 This will install angular-cli globally on your system.
 
-ng new "your-project-name" --prefix custom
+`ng new "your-project-name" --prefix custom`
 This will create a new project.
 
 ## Add angular-elements and polyfill
-ng add @angular/elements
+`ng add @angular/elements`
 This is going to add angular elements to the project. While installing you will observe that on your terminal, it will show:
  - Added document-register-element as a dependency
  - Added document-register-element.js polyfill to scripts
@@ -41,3 +41,6 @@ There are few changes which we will have to make to package.json
    Because the build generates different files which are required for our generated web component to work. What we have done is we have bundled all the generated      files which is required for this web component to work.
  - Static server: `"serve": "http-server --gzip"`
    This static server is required for running the demo file. We import the generated web component in the index.html file.
+   
+## Credits
+  - [Build custom web components with Angular 6](https://medium.com/@tomsu/building-web-components-with-angular-elements-746cd2a38d5b)
