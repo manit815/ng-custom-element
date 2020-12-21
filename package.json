@@ -11,6 +11,13 @@
     "lint": "ng lint",
     "e2e": "ng e2e"
   },
+  "keywords": [
+    "web-components",
+    "angular-element",
+    "javascript",
+    "custom-elements",
+    "custom elements with angular"
+  ],
   "private": true,
   "dependencies": {
     "@angular/animations": "~10.1.5",
