@@ -9,7 +9,8 @@
     "serve": "http-server --gzip",
     "test": "ng test",
     "lint": "ng lint",
-    "e2e": "ng e2e"
+    "e2e": "ng e2e",
+    "build-cng": "ng build --configuration production --output-hashing none && cat dist/ng-button/runtime.js dist/ng-button/polyfills.js dist/ng-button/scripts.js dist/ng-button/main.js > dist/angular-element.js"
   },
   "keywords": [
     "web-components",
